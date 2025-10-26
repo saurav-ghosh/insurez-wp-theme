@@ -1,0 +1,239 @@
+/*
+Theme Name: Insurez
+Theme URI: http://example.com/insurez
+Author: saurav ghosh
+Author URI: https://sauravghoshweb.com
+Description: Custom theme for Insurez.
+Version: 1.0.0
+Text Domain: insurez
+*/
+
+.footer__subscribe-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__subscribe-input input[type="email"] {
+  flex: 1;
+  padding-right: 40px; /* leave space for the icon */
+}
+
+.footer__subscribe-input button {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0;
+  font-size: 18px;
+}
+
+.footer__subscribe-input i {
+  bottom: 0;
+}
+
+/* Custom CSS for nested comments */
+.comment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comment-list li {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+/* Only parent comments get horizontal separator lines */
+.comment-list > li {
+  border-bottom: 1px solid #eee !important;
+}
+
+.comment-list > li:last-child {
+  border-bottom: none;
+}
+
+/* Nested comment styling - only left margin, no borders */
+.comment-list li.depth-1 {
+  margin-left: 40px;
+  border-bottom: none;
+}
+
+.comment-list li.depth-2 {
+  margin-left: 80px;
+  border-bottom: none;
+}
+
+.comment-list li.depth-3 {
+  margin-left: 120px;
+  border-bottom: none;
+}
+
+.reply-indicator {
+  font-size: 12px;
+  color: #666;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+/* Remove extra borders from nested comments */
+.comment-list li ul {
+  margin: 0;
+  padding: 0;
+}
+
+.comment-list li ul li {
+  border-bottom: none;
+  margin-bottom: 15px;
+}
+
+.comment-list li ul li:last-child {
+  margin-bottom: 0 !important;
+}
+
+.postbox__comment ul li {
+  padding-bottom: 25px !important;
+}
+
+#tag_cloud-2 > .tagcloud a {
+  background: var(--tp-common-white);
+  color: var(--tp-text-body);
+  display: inline-block;
+  font-size: 13px !important;
+  font-weight: 600;
+  line-height: 1;
+  padding: 13px 14px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border: 1px solid #eaebeb;
+}
+
+#tag_cloud-2 > .tagcloud a:hover {
+  background: var(--tp-theme-1);
+  color: var(--tp-common-white);
+  border: 1px solid #00715d;
+}
+
+#insurez_latest_posts-2,
+#tag_cloud-2 {
+  background: var(--tp-grey-1) !important;
+  padding: 45px 30px 20px 30px;
+}
+
+/* Fix textarea interaction issues */
+.contact__input textarea {
+  line-height: 1.2 !important;
+  border: 2px solid #364743 !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.wpcf7-response-output {
+  color: white !important;
+}
+
+/* Breadcrumb Styles */
+.breadcrumb__list {
+  list-style: none;
+  z-index: 9999999 !important;
+  position: relative;
+}
+
+.breadcrumb__list li {
+  display: inline;
+}
+
+.breadcrumb__list li span a {
+  text-transform: uppercase;
+  cursor: pointer;
+  pointer-events: auto;
+  display: inline-block;
+}
+
+/* Show → only between non-empty items */
+.breadcrumb__list li:not(:empty) + li:not(:empty)::before {
+  content: " / ";
+  color: #fff;
+  padding: 0 6px;
+}
+
+.breadcrumb__bg__overlay {
+  z-index: 1 !important;
+}
+
+/* Target CF7 generated structure */
+.contactform__input .wpcf7-form-control-wrap {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contactform__input input[type="text"],
+.contactform__input input[type="email"],
+.contactform__input .wpcf7-text,
+.contactform__input .wpcf7-email {
+  width: 100% !important;
+  padding: 15px 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #fff;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.contactform__select .wpcf7-form-control-wrap {
+  display: block;
+  width: 100%;
+}
+
+.contactform__select select,
+.contactform__select .wpcf7-select {
+  width: 100% !important;
+  padding: 15px 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #fff;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px;
+  padding-right: 45px;
+  box-sizing: border-box;
+}
+
+.tpcta__btn input[type="submit"],
+.tpcta__btn .wpcf7-submit {
+  background: #2c8aa6 !important;
+  color: #fff !important;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.tpcta__btn {
+  margin-top: 30px;
+}
+
+.contactform__input input {
+  text-transform: none !important;
+}
+
+.contactform__select .insurance-select{
+    color: #6f7775 ;
+}
