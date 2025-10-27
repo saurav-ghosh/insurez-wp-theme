@@ -4,7 +4,7 @@ A modern, minimal, and fully responsive WordPress theme built Insurrence company
 
 ## 🌟 Features
 - Fully responsive and SEO optimized
-- Custom post types for artworks
+- Custom post types
 - Theme Customizer support
 - AJAX-powered gallery filter
 
