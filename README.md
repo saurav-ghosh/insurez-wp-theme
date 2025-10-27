@@ -19,7 +19,7 @@ A modern, minimal, and fully responsive WordPress theme built Insurrence company
 - Gutenberg & Elementor compatibility
 
 ## 📷 Preview
-![Screenshot](theme/screenshot.png)
+[http://insurez.sauravghoshweb.com]
 
 ## 📄 License
 MIT License
